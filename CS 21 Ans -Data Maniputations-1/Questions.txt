@@ -1,0 +1,47 @@
+
+Handling Thousands Separators: Read example.csv, ensuring that the 'postTestScore' column (which contains strings like "25,000") is correctly interpreted as numbers by using the comma (,) as the thousands separator.
+
+Part 3: Series String Manipulation & Regex
+These questions address the specific string operations performed in the code.
+
+Case and Length Operations: Create a Series from the provided list of names. Perform three operations:
+
+Convert all strings to lower case.
+
+Convert all strings to upper case.
+
+Calculate the length of every string in the series.
+
+Stripping Whitespace: Create a Series with strings containing leading/trailing whitespace.
+
+strip(): Remove whitespace from both sides.
+
+lstrip(): Remove whitespace only from the left side.
+
+rstrip(): Remove whitespace only from the right side.
+
+Splitting Strings: Create a Series of strings joined by underscores (e.g., 'India_is_big').
+
+Split the strings into lists using _ as the separator.
+
+Extract specifically the second element (index 1) from those lists.
+
+Split the strings using _ but expand the result into separate columns of a DataFrame.
+
+Complex Regex Replacement: Create a Series of codes (e.g., 'AabX', 'dog'). Use a regular expression to find strings that either:
+
+Start with any single character followed immediately by the letter 'a' (case insensitive), OR
+
+Contain the exact word 'dog'. Replace these matches with the string 'XX-XX '.
+
+Currency Cleaning: Given a Series of strings representing currency (e.g., '-$10', '$10,000'), remove the dollar sign ($) from all elements.
+
+Regex Word Reversal: Given a Series containing text mixed with numbers (e.g., 'india 1998'), use a Regular Expression pattern ([a-z]+) to find all lowercase words and reverse the characters of those specific words (e.g., convert india to aidni).
+
+Alphanumeric Pattern Check: Create a Series of codes. Return a Boolean Series indicating True if the string contains a digit [0-9] followed immediately by a lowercase letter [a-z].
+
+Specific Character Check: Create a Series of strings. Return a Boolean Series indicating True if the string contains the letter 'A'. Ensure that NaN values are treated as False rather than errors.
+
+One-Hot Encoding (Get Dummies): Given a Series where values are strings separated by pipes (e.g., 'a|b'), separate these values and create a dummy/indicator DataFrame (One-Hot Encoding) representing the presence of 'a', 'b', or 'c'.
+
+Dataframe Merging: Create two DataFrames, left and right, both containing a 'key' column and a data column ('ltable', 'rtable'). Perform an inner merge of these two DataFrames based on the 'key' column.
