@@ -116,12 +116,12 @@ ipython_config.py
 #pdm.toml
 .pdm-python
 .pdm-build/
-
+*.pptx
 # pixi
 #   Similar to Pipfile.lock, it is generally recommended to include pixi.lock in version control.
 #pixi.lock
-#   Pixi creates a virtual environment in the .pixi directory, just like venv module creates one
-#   in the .venv directory. It is recommended not to include this directory in version control.
+#   Pixi creates a virtual environment in the .pixi directory, just like csenv1 module creates one
+#   in the .csenv1 directory. It is recommended not to include this directory in version control.
 .pixi
 
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
@@ -137,12 +137,12 @@ celerybeat.pid
 # Environments
 .env
 .envrc
-.venv
+.csenv1
 env/
-venv/
+csenv1/
 ENV/
 env.bak/
-venv.bak/
+csenv1.bak/
 
 # Spyder project settings
 .spyderproject
@@ -205,3 +205,13 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+# Ignore HTML files
+*.html
+
+# Ignore temporary Word documents (starting with $)
+~$*.docx
+
+# Ignore Jupyter notebooks containing "solution" or "solutions" (case-insensitive)
+*[Ss]olution*.ipynb
+*[Aa]ns*.ipynb
+*[Aa]nswer*.ipynb
